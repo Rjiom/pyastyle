@@ -3,7 +3,7 @@ Python module for astyle
 
 | |version| |travis| |appveyor|
 
-.. |version| image:: https://pypip.in/version/pyastyle/badge.svg?style=flat
+.. |version| image:: https://img.shields.io/pypi/v/pyastyle.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/pyastyle
 
