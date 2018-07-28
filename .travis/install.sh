@@ -77,7 +77,8 @@ else
     esac
 fi
 
-sudo pip install virtualenv
-virtualenv ~/.venv
+#sudo pip install virtualenv
+#virtualenv ~/.venv
+python3 -m venv ~/.venv
 source ~/.venv/bin/activate
 pip install tox
