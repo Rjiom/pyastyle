@@ -72,7 +72,7 @@ else
             sudo apt-get install python3.6 python3.6-dev
             ;;
         py37)
-            sudo apt-get install python3.7p python3.7-dev
+            sudo apt-get install python3.7 python3.7-dev
             ;;
     esac
 fi

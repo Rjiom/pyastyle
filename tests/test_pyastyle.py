@@ -11,7 +11,7 @@ def test_version_is_string():
 
 def test_version_is_numberic_like():
     ver = pyastyle.version()
-    assert re.match(r'^(\d+\.){2,}(\d+\w?)$', ver)
+    assert re.match(r'^(\d+\.){1,}(\d+\w?)$', ver)
 
 
 def test_format_simple_code():
