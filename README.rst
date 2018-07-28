@@ -7,9 +7,9 @@ Python module for astyle
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/pyastyle
 
-.. |travis| image:: https://travis-ci.org/timonwong/pyastyle.svg?branch=master
+.. |travis| image:: https://travis-ci.org/Rjiom/pyastyle.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/timonwong/pyastyle
+    :target: https://travis-ci.org/Rjiom/pyastyle
 
 .. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/timonwong/pyastyle?branch=master&svg=true
     :alt: AppVeyor Build Status
