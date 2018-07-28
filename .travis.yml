@@ -4,6 +4,8 @@ branches:
     - gh-pages
     - /^v\d/
 
+sudo: required
+
 language: c
 
 os:
@@ -22,6 +24,8 @@ env:
     - TOXENV=py33
     - TOXENV=py34
     - TOXENV=py35
+    - TOXENV=py36
+    - TOXENV=py37
 
 matrix:
   exclude:
