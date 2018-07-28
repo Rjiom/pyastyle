@@ -17,15 +17,6 @@ if [[ "$DARWIN" = true ]]; then
     fi
 
     case "${TOXENV}" in
-        py26)
-            brew upgrade pyenv
-            pyenv install 2.6.6
-            pyenv global 2.6.6
-            ;;
-        py27)
-            curl -O https://bootstrap.pypa.io/get-pip.py
-            sudo python get-pip.py
-            ;;
         py32)
             brew upgrade pyenv
             pyenv install 3.2.5
@@ -46,6 +37,16 @@ if [[ "$DARWIN" = true ]]; then
             pyenv install 3.5.0
             pyenv global 3.5.0
             ;;
+        py36)
+            brew upgrade pyenv
+            pyenv install 3.6.0
+            pyenv global 3.6.0
+            ;;
+        py37)
+            brew upgrade pyenv
+            pyenv install 3.7.0
+            pyenv global 3.7.0
+            ;;
     esac
 
     pyenv rehash
@@ -55,12 +56,6 @@ else
     sudo apt-get -y update
 
     case "${TOXENV}" in
-        py26)
-            sudo apt-get install python2.6 python2.6-dev
-            ;;
-        py27)
-            # Already shipped with ubuntu, skip
-            ;;
         py32)
             sudo apt-get install python3.2 python3.2-dev
             ;;
@@ -72,6 +67,12 @@ else
             ;;
         py35)
             sudo apt-get install python3.5 python3.5-dev
+            ;;
+        py36)
+            sudo apt-get install python3.6 python3.6-dev
+            ;;
+        py37)
+            sudo apt-get install python3.7p python3.7-dev
             ;;
     esac
 fi
