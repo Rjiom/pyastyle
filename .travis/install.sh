@@ -52,7 +52,7 @@ if [[ "$DARWIN" = true ]]; then
     pyenv rehash
 
 else
-    sudo add-apt-repository -y ppa:fkrull/deadsnakes
+    sudo add-apt-repository -y ppa:jonathonf
     sudo apt-get -y update
 
     case "${TOXENV}" in
