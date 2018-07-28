@@ -57,22 +57,34 @@ else
 
     case "${TOXENV}" in
         py32)
+            sudo add-apt-repository -y ppa:jonathonf/python3.2
             sudo apt-get install python3.2 python3.2-dev
+            sudo apt-get -y update
             ;;
         py33)
-            sudo apt-get install python3.3 python3.3-dev
+            sudo add-apt-repository -y ppa:jonathonf/python3.3
+            sudo apt-get -y update
+            sudo apt-get install python3.3 python3.3-dev python3.3-venv
             ;;
         py34)
-            sudo apt-get install python3.4 python3.4-dev
+            sudo add-apt-repository -y ppa:jonathonf/python3.4
+            sudo apt-get install python3.4 python3.4-dev python3.4-venv
+            sudo apt-get -y update
             ;;
         py35)
-            sudo apt-get install python3.5 python3.5-dev
+            sudo add-apt-repository -y ppa:jonathonf/python3.5
+            sudo apt-get install python3.5 python3.5-dev python3.5-venv
+            sudo apt-get -y update
             ;;
         py36)
-            sudo apt-get install python3.6 python3.6-dev
+            sudo add-apt-repository -y ppa:jonathonf/python3.6
+            sudo apt-get install python3.6 python3.6-dev python3.6-venv
+            sudo apt-get -y update
             ;;
         py37)
-            sudo apt-get install python3.7 python3.7-dev
+            sudo add-apt-repository -y ppa:jonathonf/python3.7
+            sudo apt-get install python3.7 python3.7-dev python3.7-venv
+            sudo apt-get -y update
             ;;
     esac
 fi
