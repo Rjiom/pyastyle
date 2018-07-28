@@ -20,13 +20,12 @@ sources = ['src/pyastyle.cc']
 sources.extend(astyle_sources)
 
 if sys.platform != 'win32':
-    extra_compile_args = '-W -Wall -fno-rtti -fno-exceptions'.split()
+    extra_compile_args = '-W -Wall -fno-rtti -fno-exceptions -std=c++11'.split()
 else:
     extra_compile_args = []
 
 if sys.platform == 'win32':
     extra_compile_args.extend(['/EHsc'])
-
 
 module = Extension(
     'pyastyle',
